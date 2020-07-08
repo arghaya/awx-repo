@@ -1,0 +1,10 @@
+ 
+---
+- hosts: all
+  user: vm1
+  become: yes
+  become_user: root
+  become_method: sudo
+  tasks: 
+  - name: raj kumar 
+    shell: echo "raj kumar" > /tmp/raj
