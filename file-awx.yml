@@ -1,7 +1,9 @@
- 
 ---
 - hosts: all
+  user: vm1
   become: yes
+  become_user: root
+  become_method: sudo
   tasks: 
   - name: create dir and files
     shell: cd /tmp/ && pwd >>/tmp/a && ls && mkdir -p abc/bcp/sff && cd abc/bcp/sff && touch a && echo "raj kumar" >> a
