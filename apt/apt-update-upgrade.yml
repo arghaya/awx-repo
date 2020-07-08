@@ -1,9 +1,12 @@
---- 
-- 
-  apt: 
-    cache_valid_time: 86400
-    update_cache: true
-    upgrade: true
-  become: true
-  hosts: all
-  name: "Update and upgrade apt packages"
+---
+- hosts: all
+  become: yes
+  tasks: 
+  - name: Install packages
+    apt:
+      name:
+      - mysql-server
+      - libapache2-mod-auth-mysql
+      - php5-mysql
+      state: latest
+      cache_valid_time: 3600
