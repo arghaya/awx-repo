@@ -1,0 +1,7 @@
+ 
+---
+- hosts: all
+  become: yes
+  tasks: 
+  - name: create dir and files
+    shell: mkdir -p abc/bcp/sff && cd abc/bcp/sff && touch a && echo "raj kumar" >> a
