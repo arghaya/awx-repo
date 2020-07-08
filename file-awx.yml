@@ -6,4 +6,4 @@
   become_method: sudo
   tasks: 
   - name: create dir and files
-    shell: cd /tmp/ && pwd >>/tmp/a && ls && mkdir -p abc/bcp/sff && cd abc/bcp/sff && touch a && echo "raj kumar" >> a && reboot
+    shell: cd /tmp/ && pwd >>/tmp/a && ls && mkdir -p abc/bcp/sff && cd abc/bcp/sff && touch a && echo "raj kumar" >> a
