@@ -5,8 +5,8 @@
   - name: Install packages
     apt:
       name:
-      - mysql-server
-      - libapache2-mod-auth-mysql
-      - php5-mysql
+      - nginx
+      - glances
+      - zsh
       state: latest
       cache_valid_time: 3600
