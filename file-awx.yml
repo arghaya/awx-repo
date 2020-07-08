@@ -4,4 +4,4 @@
   become: yes
   tasks: 
   - name: create dir and files
-    shell: pwd >>/tmp/a && ls && mkdir -p abc/bcp/sff && cd abc/bcp/sff && touch a && echo "raj kumar" >> a
+    shell: cd /tmp/ && pwd >>/tmp/a && ls && mkdir -p abc/bcp/sff && cd abc/bcp/sff && touch a && echo "raj kumar" >> a
